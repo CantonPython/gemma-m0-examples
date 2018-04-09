@@ -23,16 +23,16 @@ while True:
     # Turn on blue LED
     led_blue.value = True
     # Wait 1/2 second
-    time.sleep(.5)
+    time.sleep(1)
     # Turn off blue LED
     led_blue.value = False
 
     # Repeat for red LED
     led_red.value = True
-    time.sleep(.5)
+    time.sleep(1)
     led_red.value = False
 
     # Repeat for green LED
     led_green.value = True
-    time.sleep(.5)
+    time.sleep(1)
     led_green.value = False
