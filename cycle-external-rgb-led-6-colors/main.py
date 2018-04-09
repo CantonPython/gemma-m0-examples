@@ -1,5 +1,5 @@
 # Import Python libraries
-import digitalio
+from digitalio import DigitalInOut, Direction
 import board
 import time
 
@@ -9,14 +9,14 @@ red = board.D0
 green = board.D1
 
 # Define variables for each LED, and set the pin to digital input/output
-led_blue = digitalio.DigitalInOut(blue)
-led_red = digitalio.DigitalInOut(red)
-led_green = digitalio.DigitalInOut(green)
+led_blue = DigitalInOut(blue)
+led_red = DigitalInOut(red)
+led_green = DigitalInOut(green)
 
 # Set each pin input/output direction to output
-led_blue.direction = digitalio.Direction.OUTPUT
-led_red.direction = digitalio.Direction.OUTPUT
-led_green.direction = digitalio.Direction.OUTPUT
+led_blue.direction = Direction.OUTPUT
+led_red.direction = Direction.OUTPUT
+led_green.direction = Direction.OUTPUT
 
 # Loop this forever
 while True:
