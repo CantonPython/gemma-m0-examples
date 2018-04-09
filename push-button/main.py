@@ -28,5 +28,6 @@ while True:
     else:
         led_green.value = True
         led_red.value = False
+        time.sleep(1)
 
     time.sleep(0.01)  # delay to make check more reliable
